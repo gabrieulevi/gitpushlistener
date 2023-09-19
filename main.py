@@ -6,7 +6,7 @@ load_dotenv()
 app = Flask(__name__)
 @app.route("/", methods=["POST"])
 def triggerPull():
-    data = request.get_json()
+    #data = request.get_json()
     
     repo_path = os.getenv("REPO_PATH")
 
